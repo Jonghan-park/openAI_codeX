@@ -6,7 +6,7 @@ import { Configuration, OpenAIApi } from "openai";
 dotenv.config();
 
 const configuration = new Configuration({
-  apikey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.OPEN_API_KEY,
 });
 
 const openai = new OpenAIApi(configuration);
@@ -25,7 +25,7 @@ app.post("/", async (req, res) => {
   try {
     const prompt = req.body.prompt;
     const response = await openai.createCompletion({
-      model: "code-davinci-002",
+      model: "text-davinci-002",
       prompt: `${prompt}`,
       temperature: 0,
       max_tokens: 3000,
@@ -41,3 +41,7 @@ app.post("/", async (req, res) => {
     res.status(500).send({ error });
   }
 });
+
+app.listen(5000, () =>
+  console.log("Server is running on port http://localhost:5000")
+);
