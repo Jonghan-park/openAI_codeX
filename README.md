@@ -1,4 +1,4 @@
-# AskMeAnything - openAi
+# AskMeAnything - ChatGPT
 
 # Period
 26 Dec, 2022
@@ -10,7 +10,7 @@
 https://askmeanything-codex.onrender.com/
 
 # Environment
-Used : Vanilla javascript, HTML, CSS, Node.js, Express, Open ai
+Used : Vanilla javascript, HTML, CSS, Node.js, Express, ChatGPT
 IDE : Visual Studio Code  
 
 # Sample screenshots
